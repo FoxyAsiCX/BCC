@@ -9,7 +9,7 @@
       /* Font End */
       /* Background Colour */
 	  body {
-	    background-color:#999999
+	    background-color:White;
 	  }
       /* Background Colour */	
       /* Footer Start */
@@ -18,8 +18,8 @@
 	    left: 0;
 	    bottom: 0;
 	    width: 100%;
-	    background-color: Purple;
-	    color: white;
+	    background-color:#e3e3e3;
+	    color: Black;
 	    text-align: right;
 	  }	
       /* Footer End */
