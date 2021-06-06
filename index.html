@@ -7,6 +7,7 @@
    <meta property="og:image" content="https://foxyasicx.github.io/BCC/BCC~Logo.png">
    <link rel="icon" href="https://foxyasicx.github.io/BCC/BCC~Logo.png" type="image/png" sizes="16x16">
    <link rel="stylesheet" href="https  ://foxyasicx.github.io/BCC/CSS~Mainframe.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
 
@@ -26,45 +27,53 @@
 /* Start of Logo & Title*/
 	  .logo {
         position: absolute;
-        left: 5px;
-        top: 64px;
+        left: 10px;
+        top: 63px;
       }
       .bcc {
         position: absolute;
-        z-index: -1;
-        left: 100px;
-        top:55px;
+        left: 113px;
+        top:52px;
         line-height: 0.1;
         font-size:30px;
       }
+      	  .Green {
+        top: 52px;
+	    width: 100%;
+      }
 /* End of Logo & Title*/
 /* Start Of NavBar */
-	  .navbar {
-	    overflow: hidden;
- 	    background-color: #0c8a1f;
-	  }
-	  .navbar a {
-	    float: left;
- 	    display: block;
-        color: White;
-   	    text-align: center;
- 	    padding: 14px 8px;
- 	    text-decoration: none;
- 	    font-size: 17px;
-	  }
-	  .navbar a:hover {
-	    background: #ddd;
-	    color: brown;
-	  }
-	  .main {
-	    padding: 16px;
-	    margin-top: 30px;
-	    height: 1500px; /* Used in this example to enable scrolling */
-	  }
+	  .navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c8a1f;
+  top: 52px;
+  right: 0px;
+  position: absolute;
+}
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;/*Hight x Width*/
+  text-decoration: none;
+        font-size:20px;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.navbar .active {
+  background-color: grey;
+}
 /* End Of NavBar */
-
-
-
 /* Footer Start */
 	  .footer {
  	    position: fixed;
@@ -225,13 +234,25 @@
 <img src="https://foxyasicx.github.io/BCC/BCC~Logo.png" width="90" height="76">
 </div>
 <div class="bcc">
-<p style="font-family:Kaushan_Script; letter-spacing: 5px; top: 64px; ">Bethlehem</p>
-<p style="font-family:Kaushan_Script; letter-spacing: 1px; top: 54px;">Country Club</p>
+<p style="font-family:Kaushan_Script; letter-spacing: 5px;">Bethlehem</p>
+<p style="font-family:Kaushan_Script; letter-spacing: 1px;">Country Club</p>
 </div>
 
 <div class="navbar">
- 
-     
+<ul>
+  <li><a href="#about">Resturaunt & Ice Cream Shoppe</a></li>
+  <li><a href="#about">Pro Shop</a></li>
+  <li><a href="#about">Events</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <br>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">Greens Fees</a></li>
+  <li><a href="#about">Membership</a></li>
+</ul>
+</div>
+<div class="Green">
+<img src="https://foxyasicx.github.io/BCC/Background.png" width="100%" height="152">
 </div>
  
 
