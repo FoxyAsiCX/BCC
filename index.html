@@ -23,10 +23,25 @@
 	    text-align: left;
 	  }	
 /* Header End */
-/* Start Of NavBart */
+/* Start of Logo & Title*/
+	  .logo {
+        position: absolute;
+        left: 5px;
+        top: 64px;
+      }
+      .bcc {
+        position: absolute;
+        z-index: -1;
+        left: 100px;
+        top:55px;
+        line-height: 0.1;
+        font-size:30px;
+      }
+/* End of Logo & Title*/
+/* Start Of NavBar */
 	  .navbar {
 	    overflow: hidden;
- 	    background-color: Purple;
+ 	    background-color: #0c8a1f;
 	  }
 	  .navbar a {
 	    float: left;
@@ -39,14 +54,14 @@
 	  }
 	  .navbar a:hover {
 	    background: #ddd;
-	    color: black;
+	    color: brown;
 	  }
 	  .main {
 	    padding: 16px;
 	    margin-top: 30px;
 	    height: 1500px; /* Used in this example to enable scrolling */
 	  }
-/* End Of NavBart */
+/* End Of NavBar */
 
 
 
@@ -65,7 +80,11 @@
 /* Font Start */
       @font-face {
       font-family: Open_Sans;
-      src: url(Open_Sans/OpenSans-Light.ttf);
+      src: url(https://foxyasicx.github.io/BCC/Open_Sans/OpenSans-Light.ttf);
+      }
+      @font-face {
+      font-family: Kaushan_Script;
+      src: url(https://foxyasicx.github.io/BCC/Kaushan_Script/KaushanScript-Regular.ttf);
       }
       * {
       font-family: Open_Sans;
@@ -196,13 +215,24 @@
      }
 /* End of ColourGuy */
 </style>
+<body>
 <div class="header"> 
 	<img style="position: relative; left: 5px; top: 15px; float: left;" src="https://foxyasicx.github.io/BCC/Cell~Phone.png" width="30" height="30">
     <p>&nbsp;&nbsp;&nbsp;<a href="tel:+6038695745">(603) 869-5745🏌️</a> | <a href="tel:+6038695556">(603) 869-5556🍔</a>&nbsp;&nbsp;-&nbsp;&nbsp;Monday-Sunday&nbsp;&nbsp;-&nbsp;&nbsp;7am-6pm</p>
 </div>
-<body>
- <img class="Logo" src="https://foxyasicx.github.io/BCC/BCC~Logo.png" width="90" height="90">
 
+<div class="logo">
+<img src="https://foxyasicx.github.io/BCC/BCC~Logo.png" width="90" height="76">
+</div>
+<div class="bcc">
+<p style="font-family:Kaushan_Script; letter-spacing: 5px; top: 64px; ">Bethlehem</p>
+<p style="font-family:Kaushan_Script; letter-spacing: 1px; top: 54px;">Country Club</p>
+</div>
+
+<div class="navbar">
+ 
+     
+</div>
  
 
   <div class="footer">
