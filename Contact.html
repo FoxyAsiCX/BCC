@@ -6,285 +6,43 @@
    <meta name="description" content="BCC Contacts">
    <meta property="og:image" content="https://foxyasicx.github.io/BCC/BCC~Logo.png">
    <link rel="icon" href="https://foxyasicx.github.io/BCC/BCC~Logo.png" type="image/png" sizes="16x16">
-   <link rel="stylesheet" href="https  ://foxyasicx.github.io/BCC/CSS~Mainframe.css">
+   <link rel="stylesheet" href="https://foxyasicx.github.io/BCC/CSS~Mainframe.css">
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<style>
 
-
-
-/* Header Start */
-	  .header {
- 	    position: fixed;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	    background-color:#e3e3e3;
-	    color: Black;
-	    text-align: left;
-	  }	
-/* Header End */
-/* Start of Logo & Title*/
-	  .logo {
-        position: absolute;
-        left: 10px;
-        top: 63px;
-      }
-      .bcc {
-        position: absolute;
-        left: 113px;
-        top:46px;
-        line-height: 0.1;
-        font-size:30px;
-      }
-      	  .Green {
-        top: 52px;
-	    width: 100%;
-      }
-/* End of Logo & Title*/
-/* Start Of NavBar */
-	  .navbar ul {
- 	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    overflow: hidden;
-	    top: 58px;
-	    right: 10px;
-	    position: absolute;
-	  }
-	  .navbar li {
-  	    float: right;
-  	    margin:3px;
-	  }
-      .navbar li a {
-	    display: block;
-        color: black;
-        text-align: center;
-        padding: 0px 5px;/*Hight x Width*/
-        text-decoration: none;
-        font-size:25px;
-	  }
-	  .navbar li a:hover:not(.active) {
-	    background-color: grey;
-	  }
-	  .navbar .active {
-	  background-color: grey;
-	  }
-/* End Of NavBar */
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  background-color: green;
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-/* Footer Start */
-	  .footer {
- 	    position: fixed;
-	    left: 0;
-	    bottom: 0;
-	    width: 100%;
-	    background-color:#e3e3e3;
-	    color: Black;
-	    text-align: right;
-	  }	
-/* Footer End */
-
-/* Font Start */
-      @font-face {
-        font-family: Open_Sans;
-        src: url(https://foxyasicx.github.io/BCC/Open_Sans/OpenSans-Light.ttf);
-      }
-      @font-face {
-        font-family: Kaushan_Script;
-        src:url(https://foxyasicx.github.io/BCC/Kaushan_Script/KaushanScript-Regular.ttf);
-      }
-      * {
-      font-family: Open_Sans;
-      } 
-/* Font End */
-/* Background Colour */
-	  body {
-	    background-color:White;
-	  }
-/* Background Colour */	
-/* Start Of Link Colouring*/
-	  a:visited {
-	    color: Black;
-        text-decoration: none;
-	  }
-      a:link {
-        color: Black;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #0c8a1f;
-        text-decoration: none;
-      }
-/* End Of Link Colouring*/
-/* Start of ColourGuy */
-      @-webkit-keyframes ColourGuy {
-      0% {color: #ff0000;}
-      1% {color: #f2000d;}
-      2% {color: #e6001a;}
-      3% {color: #d90026;}
-      4% {color: #cc0033;}
-      5% {color: #bf0040;}
-      6% {color: #b2004c;}
-      7% {color: #a60059;}
-      8% {color: #990066;}
-      9% {color: #8c0073;}
-      10% {color: #800080;}
-      11% {color: #73008c;}
-      12% {color: #660099;}
-      13% {color: #5900a6;}
-      14% {color: #4d00b2;}
-      15% {color: #4000bf;}
-      16% {color: #3300cc;}
-      17% {color: #2600d9;}
-      18% {color: #1900e6;}
-      19% {color: #0d00f2;}
-      20% {color: #0000ff;}
-      21% {color: #1f00ff;}
-      22% {color: #4200ff;}
-      23% {color: #5700ff;}
-      24% {color: #5c00ff;}
-      25% {color: #6100ff;}
-      26% {color: #6600ff;}
-      27% {color: #6e00f7;}
-      28% {color: #7500f0;}
-      29% {color: #7d00e8;}
-      30% {color: #8500e0;}
-      31% {color: #8c00d9;}
-      32% {color: #9400d1;}
-      33% {color: #9c00c9;}
-      34% {color: #a300c2;}
-      35% {color: #ab00ba;}
-      36% {color: #b200b2;}
-      37% {color: #ba00ab;}
-      38% {color: #c200a3;}
-      39% {color: #c9009c;}
-      40% {color: #d10094;}
-      41% {color: #d9008c;}
-      42% {color: #e00085;}
-      43% {color: #e8007d;}
-      44% {color: #f00075;}
-      45% {color: #f7006e;}
-      46% {color: #ff0066;}
-      47% {color: #ff056e;}
-      48% {color: #ff0a75;}
-      49% {color: #ff0f7d;}
-      50% {color: #ff1485;}
-      51% {color: #ff1a8C;}
-      52% {color: #ff1f94;}
-      53% {color: #ff249c;}
-      54% {color: #ff29a3;}
-      55% {color: #ff2eab;}
-      56% {color: #ff33b2;}
-      57% {color: #ff38ba;}
-      58% {color: #ff3dc2;}
-      59% {color: #ff42c9;}
-      60% {color: #ff47d1;}
-      61% {color: #ff4cd9;}
-      62% {color: #ff52e0;}
-      63% {color: #ff57e8;}
-      64% {color: #ff5cf0;}
-      65% {color: #ff61f7;}
-      66% {color: #ff66ff;}
-      67% {color: #ff6ef2;}
-      68% {color: #ff75e6;}
-      69% {color: #ff7dd9;}
-      70% {color: #ff85cc;}
-      71% {color: #ff8cbf;}
-      72% {color: #ff94b2;}
-      73% {color: #ff9ca6;}
-      74% {color: #ffa399;}
-      75% {color: #ffab8c;}
-      76% {color: #ffb280;}
-      77% {color: #ffba73;}
-      78% {color: #ffc266;}
-      79% {color: #ffc959;}
-      80% {color: #ffd14d;}
-      81% {color: #ffd940;}
-      82% {color: #ffe033;}
-      83% {color: #ffe826;}
-      84% {color: #fff019;}
-      85% {color: #fff70d;}
-      86% {color: #ffff00;}
-      87% {color: #f7ff0d;}
-      88% {color: #f0ff1a;}
-      89% {color: #e8ff26;}
-      90% {color: #e0ff33;}
-      91% {color: #b2ff80;}
-      92% {color: #abff8c;}
-      93% {color: #a3ff99;}
-      94% {color: #9cffa6;}
-      95% {color: #94ffb2;}
-      96% {color: #8cffbf;}
-      97% {color: #85ffcc;}
-      98% {color: #7dffd9;}
-      99% {color: #6efff2;}
-      100% {color: #66ffff;}
-     }
-/* End of ColourGuy */
-</style>
-<body>
-<div class="header"> 
-	<img style="position: relative; left: 5px; top: 15px; float: left;" src="https://foxyasicx.github.io/BCC/Cell~Phone.png" width="30" height="30">
+ </head>
+  <body>
+   <div class="header"> 
+    <img style="position: relative; left: 5px; top: 15px; float: left;" src="https://foxyasicx.github.io/BCC/Cell~Phone.png" width="30" height="30">
     <p>&nbsp;&nbsp;&nbsp;<a href="tel:+6038695745">(603) 869-5745🏌️</a> | <a href="tel:+6038695556">(603) 869-5556🍔</a>&nbsp;&nbsp;-&nbsp;&nbsp;Monday-Sunday&nbsp;&nbsp;-&nbsp;&nbsp;7am-6pm</p>
-</div>
-
-<div class="logo">
-<a href="https://foxyasicx.github.io/BCC"><img src="https://foxyasicx.github.io/BCC/BCC~Logo.png" width="90" height="76"></a>
-</div>
-<div class="bcc">
- <a href="https://foxyasicx.github.io/BCC">
-<p style="font-family:Kaushan_Script; letter-spacing: 3px; font-size:35px;">Bethlehem</p>
-<p style="font-family:Kaushan_Script; letter-spacing: 1px;">Country Club</p>
- </a>
-</div>
-<div class="Green">
-<img src="https://foxyasicx.github.io/BCC/Background.png" width="100%" height="152">
-</div>
-
-<div class="navbar">
-<ul>
-  <li><a href="https://foxyasicx.github.io/BCC/Putters~Pub~&~Ice~Cream.html">Resturaunt & Ice Cream</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC/Pro~Shop.html">Pro Shop</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC/Events.html">Events</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC/About.html">About</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC">Home</a></li>
-  <br>
-  <li><a class="active" href="https://foxyasicx.github.io/BCC/Contact.html">Contact</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC/Greens~Fees.html">Greens Fees</a></li>
-  <li><a href="https://foxyasicx.github.io/BCC/Memberships.html">Membership</a></li>
-</ul>
-</div>
-
-<div class="container">
-  <img src="https://github.com/FoxyAsiCX/BCC/blob/d2d1e887b2e4bcb1ba9a2fb2975e662b490e07b2/Pictures/002.JPG?raw=true" alt="Golf Course" style="width:100%;">
+    </div>
+   <div class="logo">
+    <a href="https://foxyasicx.github.io/BCC"><img src="https://foxyasicx.github.io/BCC/BCC~Logo.png" width="90" height="76"></a>
+    </div>
+   <div class="bcc">
+    <a href="https://foxyasicx.github.io/BCC">
+    <p style="font-family:Kaushan_Script; letter-spacing: 3px; font-size:35px;">Bethlehem</p>
+    <p style="font-family:Kaushan_Script; letter-spacing: 1px;">Country Club</p>
+    </a>
+   </div>
+   <div class="Green">
+    <img src="https://foxyasicx.github.io/BCC/Background.png" width="100%" height="152">
+   </div>
+   <div class="navbar">
+    <ul>
+     <li><a href="https://foxyasicx.github.io/BCC/Putters~Pub.html">Putter's Pub🍔</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/Pro~Shop.html">Pro Shop</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/Events.html">Events</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/About.html">About</a></li>
+     <li><a class="active" href="https://foxyasicx.github.io/BCC">Home</a></li>
+     <br>
+     <li><a href="https://foxyasicx.github.io/BCC/Contact.html">Contact</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/Greens~Fees.html">Greens Fees</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/Memberships.html">Membership</a></li>
+     <li><a href="https://foxyasicx.github.io/BCC/Goofy~Goats~Gourmet~Ice~Cream.html">Goofy Goats🍦</a></li>
+    </ul>
+   </div>
+   <div class="container">
+  <img src="https://github.com/FoxyAsiCX/BCC/blob/d2d1e887b2e4bcb1ba9a2fb2975e662b490e07b2/Pictures/004.JPG?raw=true" alt="Golf Course" style="width:100%;">
   
 </div>
 
