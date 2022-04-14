@@ -101,11 +101,11 @@
 /* Font Start */
       @font-face {
         font-family: Open_Sans;
-        src: url(https://foxyasicx.github.io/BCC/Open_Sans/OpenSans-Light.ttf);
+        src: url(https://bethlehemgolf.com/Open_Sans/OpenSans-Light.ttf);
       }
       @font-face {
         font-family: Kaushan_Script;
-        src:url(https://foxyasicx.github.io/BCC/Kaushan_Script/KaushanScript-Regular.ttf);
+        src:url(https://bethlehemgolf.com/Kaushan_Script/KaushanScript-Regular.ttf);
       }
       * {
       font-family: Open_Sans;
